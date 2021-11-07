@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6, p, span, li, a, label {
+  @apply dark:text-gray-100
+}
+
+.shadow-lg {
+  @apply bg-gray-100 dark:bg-gray-700 
+}

@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd spa
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: spa/build
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - spa/node_modules/**/*
